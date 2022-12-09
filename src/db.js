@@ -5,6 +5,7 @@ import {
     DB_HOST,
     DB_NAME,
     DB_USER,
+    DB_PASSWORD,
 } from './config.js'
 
 /** LA BASE DE DATOS SE ENCUENTRA EN EL PUERTO 3000 */
@@ -13,4 +14,5 @@ export const pool = createPool({
     user: DB_USER,
     port: DB_PORT,
     database: DB_NAME,
+    password: DB_PASSWORD
 })
